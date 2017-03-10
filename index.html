@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bleuscyther - jeffrey N. Carré</title>
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/FezVrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.min.css">
+    <style>
+        body,html{
+            height:100%;
+            width: 100%;
+            background: #1e5799;
+            background: -moz-linear-gradient(-45deg,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+            background: -webkit-linear-gradient(-45deg,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+            background: linear-gradient(135deg,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+
+        }
+        .console
+        {
+            font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+            padding: 25px;
+            background-color: #211f1f;
+        }
+        .jumbotron{
+            color:#fff
+        }
+        .chik {
+             padding: 10px;
+             margin: 5px;
+             border-radius: 25px;
+             border: 2px solid #4a9ade;
+             display: inline-block;
+             color: #5ea6e2;
+             cursor: pointer;
+         }
+        .chik:hover {
+            background: #fff;
+            color: #2c78b7;
+            font-weight: bold;
+            padding: 6px;
+            border: 6px solid #ccd7e0;
+        }
+    </style>
+</head>
+<body>
+<div class="jumbotron">
+    <h1 class="display-1">Hello, world!</h1>
+    <h2 class="display-2">I am a Web Developer</h2>
+    <p class="lead">Looking for challenges</p>
+    <a href="http://stackexchange.com/users/1529892">
+        <img src="https://stackexchange.com/users/flair/1529892.png?theme=clean" width="208" height="58" alt="profile for bleuscyther on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for bleuscyther on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+    </a>
+    <hr class="m-y-2">
+    <p>Battled many arenas and won a lot of badges : </p>
+    <p>
+    <span class="chik">PHP</span>
+    <span class="chik">Javascript</span>
+    <span class="chik">HTML</span>
+    <span class="chik">CSS</span>
+    <span class="chik">NodeJS</span>
+    <span class="chik">React</span>
+    <span class="chik">Angular</span>
+    <span class="chik">Ionic</span>
+    <span class="chik">Android</span>
+    <span class="chik">Laravel</span>
+    <span class="chik">Lumen</span>
+    <span class="chik">Gulp</span>
+    <span class="chik">Grunt</span>
+    <span class="chik">WebPack</span>
+    <span class="chik">MySQL</span>
+    <span class="chik">Apache</span>
+    <span class="chik">D3</span>
+    <span class="chik">Doctrine</span>
+    <span class="chik">Symphony</span>
+    <span class="chik">PERL</span>
+    <span class="chik">Redux</span>
+    <span class="chik">Router</span>
+        </p>
+<br/>
+    <p class="lead">
+        <a class="btn btn-outline-secondary btn-lg" style="margin: auto;display: block; width: 150px;" href="https://github.com/bleuscyther" role="button">More...</a>
+    </p>
+    <p class="console">
+        <span style=""># Hi, my name is Jeffrey Nicholson Carré.</span><br/>
+        <span style=""># I am a software engineer and i mostly work on web solutions for enterprise and personal use.</span><br/>
+        <span style=""># I also do wireless networking and civil engineering, but i prefer not to explore that path anymore .</span><br/>
+        <br/>
+
+        <span style="color:cornflowerblue">Getting Quote...</span><br/>
+        <span>System waithing for visitor to <b>mentally</b> provide an inspirational quote...</span><br/>
+        <span>F:\</span><span id="caption"></span><span id="cursor">|</span>
+    </p>
+
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/HubSpot/tether/v1.3.4/dist/js/tether.min.js"></script>
+<script src="https://cdn.rawgit.com/FezVrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.iife.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+<script>
+    $('body').bootstrapMaterialDesign();
+    var captionLength = 0;
+    var caption = '';
+
+
+    $(document).ready(function() {
+        setInterval ('cursorAnimation()', 600);
+        captionEl = $('#caption');
+
+        $('#test-typing').click(function(){
+            testTypingEffect();
+        });
+
+    });
+
+
+
+
+    function cursorAnimation() {
+        $('#cursor').animate({
+            opacity: 0
+        }, 'fast', 'swing').animate({
+            opacity: 1
+        }, 'fast', 'swing');
+    }
+</script>
+</body>
+</html>
